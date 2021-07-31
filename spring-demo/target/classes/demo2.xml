@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd">
+
+	<!-- Inventory inventory = new Inventory(); inventory.setName("Spring Demo"); -->
+
+	<bean id="inventoryBean" class="com.practice.demo2.Inventory">
+		<property name="id" value="1">
+		</property>
+	</bean>
+
+	<!-- Product prod = new Product(); prod.setCustomer(customerBean); -->
+
+
+	<bean name="product" class="com.practice.demo2.Product">
+
+		<property name="inventory">
+			<ref bean="inventoryBean" />
+		</property>
+
+
+	</bean>
+
+
+</beans>
