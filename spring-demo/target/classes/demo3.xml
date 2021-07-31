@@ -1,0 +1,46 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd">
+
+	<!-- Stock stock = new Stock(); stock.setName("Spring Demo"); -->
+
+	<bean id="stockBean" class="com.practice.demo3.Stock">
+		<property name="name" value="Lakshmi">
+		</property>
+	</bean>
+
+	<!-- Inventory inventory = new Inventory(); inventory.setInventory(inventoryBean); -->
+
+
+	<bean name="inventoryBean" class="com.practice.demo3.Inventory">
+	<constructor-arg>
+		<value>1</value>
+	</constructor-arg>
+	<constructor-arg>
+		<value>Lakshmi</value>
+	</constructor-arg>
+	<constructor-arg>
+		<ref bean="stockBean" />
+	</constructor-arg>
+		</bean>
+
+
+
+<bean name="productBean" class="com.practice.demo3.Product">
+
+		<property name="inventory">
+			<ref bean="inventoryBean" />
+		</property>
+
+
+	</bean>
+
+</beans>
