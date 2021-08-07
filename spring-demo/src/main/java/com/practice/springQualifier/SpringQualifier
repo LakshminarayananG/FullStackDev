@@ -1,0 +1,6 @@
+https://github.com/gaje85/springvideotutorialexamples
+
+Use of this annotation:
+Placed on a field or parameter when autowiring.
++ Where --> field or parameter
++ When --> autowire to qualify a bean 

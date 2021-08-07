@@ -1,0 +1,6 @@
+Spring Expression Language.
+
++ Property injection is done by using - ${}
++ Spring Expression Language  - #
+
+Whenever we want to inject value from any object type , SPEL is used.

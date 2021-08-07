@@ -8,6 +8,6 @@ public class Demo {
 	public static void main(String[] args) {
 
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("demo2.xml");
-
+		ctx.close();
 	}
 }

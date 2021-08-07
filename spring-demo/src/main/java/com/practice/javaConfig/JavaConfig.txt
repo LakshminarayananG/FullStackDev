@@ -1,0 +1,6 @@
+Types of Exception
+NoSuchBean
+NoUniqueBean
+BeanNotOfRequiredType
+
+With Spring, All these annotations can be replaced with @SpringBootApplication

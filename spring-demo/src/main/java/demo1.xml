@@ -22,7 +22,7 @@
 <!-- Account account = new Account(); account.setCustomer(customerBean); -->
 
 
-	<bean name="account" class="com.practice.demo1.Account">
+	<bean name="accountBean" class="com.practice.demo1.Account">
 
 		<property name="customer">
 			<ref bean="customerBean" />

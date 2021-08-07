@@ -1,0 +1,6 @@
+<constructor-arg name="" type="" index="" value=""/>
+
+Singleton - creates a single object and cached for use
+Factory Design Pattern - Used when we want to have large number of objects
+
+Bean factory - one of the factory interface available.

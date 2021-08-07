@@ -1,0 +1,16 @@
+Java annotations from JDK 5
+
+Spring Based Annotations:
++Component - Create a bean
++Autowired - For dependency Injection
++Repository - DB Layer
++Service - Business Logic Layer
++Controller - Web App Layer
+
+
+JEE Annotations
++Named - Creates a bean. Equivalent of Component
++Inject - Dependency Injection (Injects a bean), Equivalent of @Autowired
+
+
+When layered architecture is used, spring based annotations is preferred
