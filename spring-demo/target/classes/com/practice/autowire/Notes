@@ -1,0 +1,10 @@
+@Autowired
+
+Used to inject the bean
+
+Types:
+1. byName
+2. byType
+3. constructors
+4. default -byConstructor / byType
+

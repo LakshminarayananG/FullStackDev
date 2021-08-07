@@ -1,0 +1,33 @@
+* Bean can also be created using the annotations.
+
+* Annotations introduced in java since JDK 5
+
+4 basic annotations that could be used to create bean
+
+Component
+Service
+Repository
+Controller
+
+Bean wouldn't be created using the xml, but the package to identify the annotation would be specified in the component scan in the xml file
+
+
+Component:
+* Would create a bean with the classname unless explicitly mentioned
+Example:
+@Component for a class named Example will create a bean named example
+@Component("exam") will create a bean with the name exam irrespective of whatever the class name is.
+
+Service, Repository & Controller also serves the same purpose of creating a bean but the area of usage differs between them
+
+Component
+Service  --> Busines logic layer 
+Repository --> Database layer / DAO layer bean
+Controller  --> Web Layer
+
+
+@Named, @Inject, @Autowire
+Named & Inject are java based annotations whereas autowire is spring based annotation.
+
+
+
