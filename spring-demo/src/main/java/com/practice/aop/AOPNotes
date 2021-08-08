@@ -1,0 +1,56 @@
+AOP Doc:
+https://docs.spring.io/spring-framework/docs/2.5.x/reference/aop.html
+
+AOP complements the object oriented programming. The way we program would be a bit different.
+
+Unit of modularity in AOP is aspect. Aspect enabled modularization of concerns (grouping the functions)
+
+Cross cutting concerns:
+
+Product Management System:
+Core functions include product, Items, Ordering & category of product whereas logging, transactions, security are other aspects
+that are spread across the applications. these are known as cross cutting concerns.
+
+
+Scenario: OpenDoor:
+Core requirement would be to open the door but cross cutting requirement would be insert key & remove key
+
+Insert Key --> Cross cutting requirement
+Open Door --> Main functionality
+Remove Key --> Cross cutting requirement
+
+
+Aspect: modularization of a concern that cuts across multiple classes
+In Spring, aspects are implemented using regular classes (schema based XML) or using the @Aspect annotation in the classes.
+
+The aspect class contains the reusable functions that could be used across.
+
+
+Important Terminologies:
+1. Aspect --> Cross cutting functionalities included along with core functionalities
+2. Join Point --> Before or after actions after a functionality. Execution point
+3. Advice  --> action taken around by an aspect around a particular join point
+4. Point cut --> a predicate that matches the join point. looks for an execution of the method with a certain name / partial match
+5. target object --> advice being provided to the aspect. It could be one or more aspect
+6. AOP Proxy --> 2 proxies are available. An additional class being created and all calls will be intercepted through this proxy class.
+	* JDK Proxy   --> A class that implements an interface.Proxy is based on interface. Eg : OpenDoorImpl implements the OpenDoor Interface.
+	* CGLIB Proxy --> Will create a subclass and override methods.Proxy is based on subclass. This class should not be a final class. Eg: Direct implementation. 
+
+Performance wise difference between JDK & CGLIB:
+				JDK Lib			CGLib
+Creation		973.650 ms		804.00 ms
+Invocation		0.005			0.002
+
+7. Weaving --> Linking aspect with other applications
+
+
+Types of advice:
+1. After
+2. Before
+3. Around
+4. After returning
+5. After throwing
+
+
+
+The type of proxy to be used can be specified in the xml file. This could be achieved by 
