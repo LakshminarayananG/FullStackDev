@@ -16,6 +16,15 @@ public class Demo {
 			openDoor.openDoorWithReturn();
 			appContext.close();
 
+			ClassPathXmlApplicationContext closeContext = new ClassPathXmlApplicationContext("./closedoor.xml");
+			CloseDoor closeDoor = (CloseDoor) closeContext.getBean("closedoorimpl");
+			System.out.println(closeDoor.getClass().getName());
+			closeDoor.closeDoorWithName("Door Close");
+			closeDoor.closeDoorWithPwd("sample password");
+			closeDoor.closeDoorWithReturn();
+
+			closeContext.close();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

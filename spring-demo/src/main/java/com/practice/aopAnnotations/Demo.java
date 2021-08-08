@@ -16,6 +16,11 @@ public class Demo {
 			OpenDoor openDoor = (OpenDoor) appContext.getBean("openDoorImpl");
 			System.out.println(openDoor.getClass().getName());
 			openDoor.openDoorWithKey(100);
+
+			CloseDoor closeDoor = (CloseDoor) appContext.getBean("closeDoorImpl");
+			closeDoor.closeDoorWithName("Lakshmi");
+			System.out.println(closeDoor.getClass().getSimpleName());
+
 			appContext.close();
 
 		} catch (Exception e) {

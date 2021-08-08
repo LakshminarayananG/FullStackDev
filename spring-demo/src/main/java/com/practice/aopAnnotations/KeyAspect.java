@@ -23,4 +23,12 @@ public class KeyAspect {
 	public void removeKey() {
 		System.out.println("Remove Key");
 	}
+
+	public void insertKeyBeforeClose(JoinPoint joinpoint) {
+		System.out.println("Insert key before close dooe " + joinpoint.getArgs()[0]);
+	}
+
+	public void removeKeyAfterCloseDoor(JoinPoint joinpoint) {
+		System.out.println("Remove key after close dooe " + joinpoint.getArgs()[0]);
+	}
 }
