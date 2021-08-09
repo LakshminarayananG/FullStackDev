@@ -1,0 +1,43 @@
+Link for Doc: https://docs.spring.io/spring-framework/docs/3.0.x/spring-framework-reference/html/dao.html 
+
+Data access object:
+
+Spring DAO JDBC template:
+https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/jdbc.html
+
+
+create database test;
+use test;
+
+
+create table userinfo
+(
+id int,
+name varchar(25),
+email varchar(25),
+password varchar(25),
+status int
+);
+
+insert into userinfo values(1,"test1","test1@gmail.com","test1",1);
+insert into userinfo values(2,"test2","test2@gmail.com","test2",0);
+insert into userinfo values(3,"test3","test3@gmail.com","test3",1);
+insert into userinfo values(4,"test4","test4@gmail.com","test4",1);
+
+
+ConnectionPool --> Group of connection objects will be created and it will 
+Hikari ConnectionPool Mechanism --> Recommended for high performance
+
+
+Steps to create bean:
+1. Create data source bean. This could be based on default string connection pool or Hikari Connection pool mechanism
+2. Create a JDBC template bean based on connection pool
+3. Create user or customer dao bean based on JDBC template
+
+
+Or
+1. Create data source bean. This could be based on default string connection pool or Hikari Connection pool mechanism
+2. Create user or customer bean based on data source
+
+
+

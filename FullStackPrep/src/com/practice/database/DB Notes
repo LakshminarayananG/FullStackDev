@@ -1,0 +1,15 @@
+Steps when connecting to the database
+
+1. Download the jdbc jar specific to the database
+2. Add external jars to the build path
+3. JDBC Steps:
+	a. Load the driver
+	b. Get the connection details  using URL, username & password
+	c. Validate if connection is successful 
+	
+4. MySQL Steps:
+	a. Load the driver
+	b. Create connection using connection parameters url, username & password
+	c. Create statement with the connection object
+	d. Execute specific query using the statement & store in resultset if needed
+	e. Retrieve the required value / column details from result set
