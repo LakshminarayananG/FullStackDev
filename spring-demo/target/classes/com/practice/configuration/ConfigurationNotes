@@ -1,0 +1,1 @@
+@Configuration --> Implicitly specifies that this is a java based configuration class.

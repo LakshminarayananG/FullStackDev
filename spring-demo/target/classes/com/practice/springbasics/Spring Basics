@@ -1,0 +1,39 @@
+Spring makes Java development easier.
+It is an opensource framework & takes care of most of the work done by the developer.
+
+
+Each & every component can be tested independently. 
+
+Benefits of Spring Framework:
+Simple, lightweight & implementation becomes easier.
+Can easily integrate with other frameworks.
+
+
+Application classes in spring are called POJO (Plain Old Java Object) classes. This is integrated with metadata.
+
+Metadata: Configuration information
+
+Spring framework is a light weight container.
+
+Metadata has the information on the objects that needs to be created & on how they interact with other classes. Objects are created based 
+on the information given. It resolves the dependencies and complete object lifecycle is taken care by the container.
+
+Any object created inside the container is called as bean.
+
+Resolving dependencies: 
+IoC --> Inversion of Control  (Dependency Injection)
+Object creation is done & entire lifecycle is managed by the container which could be injected depending on our need.
+
+
+XML file is the metadata that has the information for the bean to be created by container & managed
+
+
+ClassPathXMLApplicationContext  --> Class available in spring to create container
+Application context --> Supports eager loading. Beans are created at the beginning and is available for use
+Bean Factory--> Supports lazy loading. Beans are created whenever required. This is deprecated.
+
+
+Bean Scope:
+Generally refers to the lifetime of a bean
+
+

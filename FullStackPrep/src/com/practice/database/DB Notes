@@ -13,3 +13,11 @@ Steps when connecting to the database
 	c. Create statement with the connection object
 	d. Execute specific query using the statement & store in resultset if needed
 	e. Retrieve the required value / column details from result set
+	
+	
+Statement & Prepared Statement:
+Whenever we use the statement, everytime it creates a query execution plan, whereas prepared statement will create the plan once and will
+cache it for further execution.
+
+The advantage is that with prepared statement, dynamic query execution is possible and also with statement, since query execution plan is
+created everytime, it would have an impact on the performance
