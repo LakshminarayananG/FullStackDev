@@ -9,11 +9,6 @@ public class Account {
 		this.customer = customer;
 	}
 
-	@Override
-	public String toString() {
-		return "Account [customer=" + customer + "]";
-	}
-
 	public Customer getCustomer() {
 		return customer;
 	}

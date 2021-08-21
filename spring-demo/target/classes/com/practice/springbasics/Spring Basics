@@ -37,3 +37,22 @@ Bean Scope:
 Generally refers to the lifetime of a bean
 
 
+Spring Context:
+Singleton - default
+Prototype
+
+Web Context - Web Application
+Request 
+Session
+
+
+Any bean that is created by default is a singleton bean.
+
+Singleton Bean:
+caches the bean created and gives the same reference for all the subsequent requests.
+
+Prototype --> Does not cache and gives a unique bean for every request
+
+
+
+

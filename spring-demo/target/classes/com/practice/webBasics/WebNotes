@@ -1,0 +1,13 @@
+Web Application:
+an app that runs on a web server like tomcat
+Tomcat - Apache
+access web page using browser & must have active internet connection
+
+Server side technology
+Servlets
+
+
+Http:
+protocol for transmitting the hypermedia doc such as HTML. follows client server model
+- It is a stateless protocol
+

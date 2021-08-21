@@ -60,6 +60,14 @@
 	 </bean>
 	 
 	 
+	 <bean name="productBean1" class="com.practice.springbasics.Product" scope ="singleton">
+	 <property name="inventory">
+	 	<ref bean="inventoryBean1"/>
+	 </property>
+	 <property name="productName" value="OnePlus"></property>
+	 </bean>
+	 
+	 
 	<!--  <bean name="productbean1" class="com.practice.springbasics.Product">
 	 <constructor-arg name="inventory" type="com.training.springbasics.Stock" ref="stockBean" />
 		<constructor-arg name="productName" value="Tablet" />

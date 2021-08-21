@@ -29,6 +29,12 @@
 	 	</property>
 	 </bean>
 	 
+	 <bean id = "accountBean1" class="com.practice.springbasics.Account" scope="prototype">
+	 	<property name="customer">
+	 		<ref bean ="customerBean"/>
+	 	</property>
+	 </bean>
+	 
 
 
 </beans>

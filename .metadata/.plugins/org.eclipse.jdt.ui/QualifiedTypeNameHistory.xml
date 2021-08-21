@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
     <fullyQualifiedTypeName name="com.practice.javaConfigOtherTry.AppConfig"/>
@@ -15,6 +14,26 @@
     <fullyQualifiedTypeName name="javax.inject.Named"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="javax.inject.Inject"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.aop.aspectj.annotation.SingletonMetadataAwareAspectInstanceFactory"/>
+    <fullyQualifiedTypeName name="com.practice.annotations.Example"/>
+    <fullyQualifiedTypeName name="com.practice.annotations.NamedAnnotationEg"/>
+    <fullyQualifiedTypeName name="com.practice.annotations.AutowireExamples"/>
+    <fullyQualifiedTypeName name="com.practice.annotations.Autowiredependency"/>
+    <fullyQualifiedTypeName name="com.practice.annotations.AwExampleDep"/>
+    <fullyQualifiedTypeName name="com.practice.annotations.InjectAnnoExample"/>
+    <fullyQualifiedTypeName name="com.practice.annotations.ServiceExample"/>
+    <fullyQualifiedTypeName name="com.practice.annotations.RepositoryExample"/>
+    <fullyQualifiedTypeName name="com.practice.annotations.ControllerExample"/>
+    <fullyQualifiedTypeName name="com.practice.aopAnnotations.CloseDoor"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.JoinPoint"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 </qualifiedTypeNameHistroy>
