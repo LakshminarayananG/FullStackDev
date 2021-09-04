@@ -1,0 +1,17 @@
+https://www.javatpoint.com/src/hb/hibernatejar.zip
+
+javax.activation-1.2.0.jar
+http://search.maven.org/remotecontent?filepath=com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.jar
+
+jaxb-api-2.3.0.jar
+http://search.maven.org/remotecontent?filepath=javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar
+
+jaxb-core-2.3.0.jar
+http://search.maven.org/remotecontent?filepath=com/sun/xml/bind/jaxb-core/2.3.0/jaxb-core-2.3.0.jar
+
+jaxb-impl-2.3.0.jar
+http://search.maven.org/remotecontent?filepath=com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar
+
+jakarta.xml.bind-api-2.3.2
+
+add mysql connector jar as well
