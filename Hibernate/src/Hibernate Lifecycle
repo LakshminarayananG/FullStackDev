@@ -1,0 +1,52 @@
+Three states:
+1. Transient
+2. Persistent
+3. Detached
+
+When a new instance of entity is created, it goes to transient state
+When the instance is used for save, update, it goes from transient to persistent state
+When the instnace is used for evict, close, clear, it goes from persistent to detached state
+
+
+When an instance that is in detached state, and save,update is used on it, it goes from detached to persistent state
+When the same instance is deleted, it goes from persistent to transient state
+
+
+Transient State:
+Initial state & for any of the POJO classes, if an instance is created and cannot be stored in DB / related to session
+
+
+Persistent State:
+* When any of save, update, / persist state, it would move the object from transient to persistent state.
+* Whatever object that was created will now be stored as a record in the database & any modification that is going to be done for the data
+will now be available in the database
+* The instance is associated to a session
+
+
+Detached State:
+* Any action that removed the instance from the current session would move the instance from persistent to detached state. (close function)
+
+
+L1 Cache --> Within the session. This is default & cannot be disabled
+L2 Cache --> Within session factory. Need to be enabled explicitly
+
+
+Caching:
+* Storing the copy of data to serve quickly
+* Between the DB & application, this is going to be a buffered memory. This is used to reduce the number of calls made to the database.
+* Hibernate caching mechanism is one of the advantages of hibernate
+
+
+L2 caching is preferred if:
+* There are many number of objects
+* If there is a memory impact
+* When the session is going to be available for a long time
+
+
+L2 caching is enabled by cache providers. JBoss, EH cache are some of the cache providers.
+When L2 caching is enabled, the cache can be accessed from other sessions too since the data is stored in the session factory
+
+When hibernate session is requesting for data, it would first look up in session 1, if its not available, it would look in the session 
+factory and if its not available even in that, it would then look into the database.
+
+Once after the data is retrieved from the database, it would pass from DB to L2 session factory --> L1 session --> requested resource

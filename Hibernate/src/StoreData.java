@@ -32,6 +32,7 @@ public static void main(String[] args) {
 
 			session.save(e1); // inserting emp object into employee table
 			System.out.println("Employee successfully saved");
+			
 
 			// List all employees
 			System.out.println("List All Employees");
