@@ -1,0 +1,22 @@
+Parallel & Concurrent Transaction:
+
+Parallel:
+Both transactions T1 & T2 will start at the same point & at same time. 
+
+Concurrent:
+Need not occur at same time, but will have overlapping operations
+
+Atomicity:
+* The entire unit of work should succeed if all the operations succeed.
+* At any point of time, a DB system must be in a consistent state
+
+
+Consistency:
+Any constraints that is enforced in a committed state should result in consistency
+
+Isolation:
+In case of concurrent control mechanism, when same data is to be updated in 2 sessions, it would be done in isolated way using a locking
+mechanism. This mechanism is pessimistic locking and not recommended one since this would have impact on performance
+
+Durability:
+State of the system should be permanent. No data should be lost due to system crash / any other issues.
